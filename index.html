@@ -4,6 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>IONIX Racing</title>
+   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root {
@@ -13,9 +19,26 @@
       --ionix-black: #000000;
       --ionix-white: #FFFFFF;
     }
+    html {
+    scroll-behavior: smooth;
+  }
+  section {
+    padding-top: 100px; /* space so navbar doesn't cover headings */
+  }
   </style>
 </head>
 <body class="bg-[var(--ionix-black)] text-[var(--ionix-white)] font-sans">
+
+    <!-- Navbar -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-[var(--ionix-navy)] shadow-md">
+  <ul class="flex justify-center space-x-12 py-4">
+    <li><a href="#mission" class="text-[var(--ionix-white)] font-semibold hover:text-[var(--ionix-blue)] transition transform hover:scale-105">Mission / Vision</a></li>
+    <li><a href="#members" class="text-[var(--ionix-white)] font-semibold hover:text-[var(--ionix-blue)] transition transform hover:scale-105">Members</a></li>
+    <li><a href="#stem" class="text-[var(--ionix-white)] font-semibold hover:text-[var(--ionix-blue)] transition transform hover:scale-105">STEM Racing</a></li>
+    <li><a href="#sponsorship" class="text-[var(--ionix-white)] font-semibold hover:text-[var(--ionix-blue)] transition transform hover:scale-105">Sponsorship</a></li>
+  </ul>
+</nav>
+
 
   <!-- Hero Section -->
   <section class="h-screen flex flex-col justify-center items-center text-center bg-gradient-to-b from-[var(--ionix-navy)] to-[var(--ionix-black)]">
@@ -26,6 +49,7 @@
   </section>
 
   <!-- Mission & Vision -->
+   <section id="mission"></section>
   <section class="py-16 px-6 bg-[var(--ionix-navy)] text-center">
     <h2 class="text-4xl font-bold mb-6 text-[var(--ionix-blue)]">Mission & Vision</h2>
     <p class="max-w-3xl mx-auto text-lg mb-4 text-[var(--ionix-white)]">
@@ -37,6 +61,7 @@
   </section>
 
   <!-- Team Section -->
+    <section id="members"></section>
   <section class="py-16 px-6 bg-[var(--ionix-black)]">
     <h2 class="text-4xl font-bold text-center mb-10 text-[var(--ionix-blue)]">Meet the Team</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -74,6 +99,7 @@
   </section>
 
   <!-- What is STEM Racing -->
+    <section id="stem"></section>
   <section class="py-16 px-6 bg-[var(--ionix-navy)] text-center">
     <h2 class="text-4xl font-bold mb-6 text-[var(--ionix-blue)]">What is STEM Racing?</h2>
     <p class="max-w-3xl mx-auto text-lg text-[var(--ionix-white)]">
@@ -82,6 +108,7 @@
   </section>
 
   <!-- Sponsorship Tiers -->
+   <section id="sponsorship"></section>
   <section class="py-16 px-6 bg-[var(--ionix-black)]">
     <h2 class="text-4xl font-bold text-center mb-10 text-[var(--ionix-blue)]">Sponsorship Tiers</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
